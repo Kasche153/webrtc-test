@@ -5,7 +5,8 @@
   "scripts": {
     "start": "npm-run-all --parallel run:*",
     "run:nodejs": "node server.mjs",
-    "run:esbuild": "esbuild js/index.js --outfile=js/bundle.js --bundle",
+    "run:webserver": "node webserver.js",
+    "run:esbuild": "esbuild public/js/index.js --outfile=public/js/bundle.js --bundle",
     "build": "esbuild js/index.js --outfile=js/bundle.js --bundle"
   },
   "author": "Yannick Deubel (https://github.com/yandeu)",
